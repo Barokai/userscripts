@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         STM Sort by match count DESC
-// @namespace    *://www.sgtools.info/
-// @version      0.2
+// @namespace    *://www.loigistal.at/
+// @version      0.2.1
 // @description  Adds a sort by match count DESC button to STM's navigation on compare page
 // @author       Barokai | www.loigistal.at
 // @homepage     https://github.com/Barokai/userscripts/
