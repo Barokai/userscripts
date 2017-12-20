@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         STM Sort by match count DESC
 // @namespace    *://www.loigistal.at/
-// @version      0.2.1
+// @version      0.2.2
 // @description  Adds a sort by match count DESC button to STM's navigation on compare page
 // @author       Barokai | www.loigistal.at
 // @homepage     https://github.com/Barokai/userscripts/
 // @updateURL    https://github.com/Barokai/userscripts/raw/master/stm_sort_by_match_count_desc.user.js
 // @match        http://www.steamtradematcher.com/compare
+// @icon         http://www.steamtradematcher.com/res/img/favicon.jpg
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
@@ -41,7 +42,7 @@
       $("#match-results").append(matchBoxes);
     }
   
-    $(".nav.navbar-nav").first().append("<li><a href='#' id='sort'><span class='glyphicon glyphicon-sort-by-attributes-alt'></span></a></li>");
+    $(".nav.navbar-nav").first().append("<li><a href='#' id='sort' title='sort results by match count descending'><span class='glyphicon glyphicon-sort-by-attributes-alt'></span></a></li>");
     $( "#sort" ).click(function(e) {
       e.preventDefault();
       startSort();
